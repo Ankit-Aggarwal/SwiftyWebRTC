@@ -14,7 +14,7 @@ public enum RTCClientState {
     case connected
 }
 
-public protocol RTCClientDelegate {
+public protocol RTCClientDelegate: class {
     func rtcClient(client : RTCClient, startCallWithSdp sdp: String)
     func rtcClient(client : RTCClient, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack)
     func rtcClient(client : RTCClient, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack)
@@ -46,7 +46,7 @@ public class RTCClient: NSObject {
     fileprivate var remoteIceCandidates: [RTCIceCandidate] = []
     fileprivate var isVideoCall = true
 
-    public var delegate: RTCClientDelegate?
+    public weak var delegate: RTCClientDelegate?
 
     fileprivate let audioCallConstraint = RTCMediaConstraints(mandatoryConstraints: ["OfferToReceiveAudio" : "true"],
                                                          optionalConstraints: nil)
