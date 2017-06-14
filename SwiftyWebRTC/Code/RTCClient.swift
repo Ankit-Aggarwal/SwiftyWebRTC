@@ -68,8 +68,7 @@ public class RTCClient: NSObject {
             self.delegate?.rtcClient(client: self, didChangeState: state)
         }
     }
-    static var videoTrack: RTCVideoTrack?
-
+    
     public override init() {
         super.init()
     }
@@ -209,14 +208,9 @@ private extension RTCClient {
 
         if self.isVideoCall {
             if !AVCaptureState.isVideoDisabled {
-                if let videoTrack = RTCClient.videoTrack {
-                    localStream.addVideoTrack(videoTrack) // keep video track as static var for performance
-                } else {
-                    let videoSource = factory.avFoundationVideoSource(with: self.mediaConstraint)
-                    let videoTrack = factory.videoTrack(with: videoSource, trackId: "RTCvS0")
-                    localStream.addVideoTrack(videoTrack)
-                    RTCClient.videoTrack = videoTrack
-                }
+                let videoSource = factory.avFoundationVideoSource(with: self.mediaConstraint)
+                let videoTrack = factory.videoTrack(with: videoSource, trackId: "RTCvS0")
+                localStream.addVideoTrack(videoTrack)
             } else {
                 // show alert for video permission disabled
                 let error = NSError.init(domain: ErrorDomain.videoPermissionDenied, code: 0, userInfo: nil)
