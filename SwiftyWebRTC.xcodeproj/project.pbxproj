@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC330E092058F47B00140C35 /* RTCVideoViewShading.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330DFB2058F47900140C35 /* RTCVideoViewShading.h */; };
+		BC330E0A2058F47B00140C35 /* RTCVideoCodecFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330DFC2058F47900140C35 /* RTCVideoCodecFactory.h */; };
+		BC330E0B2058F47B00140C35 /* RTCVideoDecoderVP9.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330DFD2058F47900140C35 /* RTCVideoDecoderVP9.h */; };
+		BC330E0C2058F47B00140C35 /* RTCVideoEncoderVP8.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330DFE2058F47900140C35 /* RTCVideoEncoderVP8.h */; };
+		BC330E0D2058F47B00140C35 /* RTCAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330DFF2058F47A00140C35 /* RTCAudioSession.h */; };
+		BC330E0E2058F47B00140C35 /* RTCIntervalRange.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E002058F47A00140C35 /* RTCIntervalRange.h */; };
+		BC330E0F2058F47B00140C35 /* RTCVideoEncoderVP9.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E012058F47A00140C35 /* RTCVideoEncoderVP9.h */; };
+		BC330E102058F47B00140C35 /* RTCVideoFrameBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E022058F47A00140C35 /* RTCVideoFrameBuffer.h */; };
+		BC330E112058F47B00140C35 /* RTCCameraVideoCapturer.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E032058F47A00140C35 /* RTCCameraVideoCapturer.h */; };
+		BC330E122058F47B00140C35 /* RTCVideoDecoderVP8.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E042058F47A00140C35 /* RTCVideoDecoderVP8.h */; };
+		BC330E132058F47B00140C35 /* RTCAudioSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E052058F47B00140C35 /* RTCAudioSessionConfiguration.h */; };
+		BC330E142058F47B00140C35 /* RTCVideoCapturer.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E062058F47B00140C35 /* RTCVideoCapturer.h */; };
+		BC330E152058F47B00140C35 /* RTCVideoCodecH264.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E072058F47B00140C35 /* RTCVideoCodecH264.h */; };
+		BC330E162058F47B00140C35 /* RTCVideoCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = BC330E082058F47B00140C35 /* RTCVideoCodec.h */; };
 		BC3E8CC21E671D1E00C40418 /* AVCaptureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3E8CC01E671D1E00C40418 /* AVCaptureState.swift */; };
 		BC3E8CC31E671D1E00C40418 /* RTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3E8CC11E671D1E00C40418 /* RTCClient.swift */; };
 		BC3E8CEB1E671D2800C40418 /* RTCAudioSource.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3E8CC41E671D2800C40418 /* RTCAudioSource.h */; };
@@ -67,6 +81,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC330DFB2058F47900140C35 /* RTCVideoViewShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoViewShading.h; path = Headers/RTCVideoViewShading.h; sourceTree = "<group>"; };
+		BC330DFC2058F47900140C35 /* RTCVideoCodecFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecFactory.h; path = Headers/RTCVideoCodecFactory.h; sourceTree = "<group>"; };
+		BC330DFD2058F47900140C35 /* RTCVideoDecoderVP9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP9.h; path = Headers/RTCVideoDecoderVP9.h; sourceTree = "<group>"; };
+		BC330DFE2058F47900140C35 /* RTCVideoEncoderVP8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP8.h; path = Headers/RTCVideoEncoderVP8.h; sourceTree = "<group>"; };
+		BC330DFF2058F47A00140C35 /* RTCAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCAudioSession.h; path = Headers/RTCAudioSession.h; sourceTree = "<group>"; };
+		BC330E002058F47A00140C35 /* RTCIntervalRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCIntervalRange.h; path = Headers/RTCIntervalRange.h; sourceTree = "<group>"; };
+		BC330E012058F47A00140C35 /* RTCVideoEncoderVP9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP9.h; path = Headers/RTCVideoEncoderVP9.h; sourceTree = "<group>"; };
+		BC330E022058F47A00140C35 /* RTCVideoFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrameBuffer.h; path = Headers/RTCVideoFrameBuffer.h; sourceTree = "<group>"; };
+		BC330E032058F47A00140C35 /* RTCCameraVideoCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCCameraVideoCapturer.h; path = Headers/RTCCameraVideoCapturer.h; sourceTree = "<group>"; };
+		BC330E042058F47A00140C35 /* RTCVideoDecoderVP8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP8.h; path = Headers/RTCVideoDecoderVP8.h; sourceTree = "<group>"; };
+		BC330E052058F47B00140C35 /* RTCAudioSessionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCAudioSessionConfiguration.h; path = Headers/RTCAudioSessionConfiguration.h; sourceTree = "<group>"; };
+		BC330E062058F47B00140C35 /* RTCVideoCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoCapturer.h; path = Headers/RTCVideoCapturer.h; sourceTree = "<group>"; };
+		BC330E072058F47B00140C35 /* RTCVideoCodecH264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecH264.h; path = Headers/RTCVideoCodecH264.h; sourceTree = "<group>"; };
+		BC330E082058F47B00140C35 /* RTCVideoCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodec.h; path = Headers/RTCVideoCodec.h; sourceTree = "<group>"; };
 		BC3E8CC01E671D1E00C40418 /* AVCaptureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AVCaptureState.swift; path = Code/AVCaptureState.swift; sourceTree = "<group>"; };
 		BC3E8CC11E671D1E00C40418 /* RTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RTCClient.swift; path = Code/RTCClient.swift; sourceTree = "<group>"; };
 		BC3E8CC41E671D2800C40418 /* RTCAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTCAudioSource.h; path = Headers/RTCAudioSource.h; sourceTree = "<group>"; };
@@ -149,6 +177,20 @@
 		BC3E8CBF1E671D0C00C40418 /* WebRTCCode */ = {
 			isa = PBXGroup;
 			children = (
+				BC330DFF2058F47A00140C35 /* RTCAudioSession.h */,
+				BC330E052058F47B00140C35 /* RTCAudioSessionConfiguration.h */,
+				BC330E032058F47A00140C35 /* RTCCameraVideoCapturer.h */,
+				BC330E002058F47A00140C35 /* RTCIntervalRange.h */,
+				BC330E062058F47B00140C35 /* RTCVideoCapturer.h */,
+				BC330E082058F47B00140C35 /* RTCVideoCodec.h */,
+				BC330DFC2058F47900140C35 /* RTCVideoCodecFactory.h */,
+				BC330E072058F47B00140C35 /* RTCVideoCodecH264.h */,
+				BC330E042058F47A00140C35 /* RTCVideoDecoderVP8.h */,
+				BC330DFD2058F47900140C35 /* RTCVideoDecoderVP9.h */,
+				BC330DFE2058F47900140C35 /* RTCVideoEncoderVP8.h */,
+				BC330E012058F47A00140C35 /* RTCVideoEncoderVP9.h */,
+				BC330E022058F47A00140C35 /* RTCVideoFrameBuffer.h */,
+				BC330DFB2058F47900140C35 /* RTCVideoViewShading.h */,
 				BC3E8CC41E671D2800C40418 /* RTCAudioSource.h */,
 				BC3E8CC51E671D2800C40418 /* RTCAudioTrack.h */,
 				BC3E8CC61E671D2800C40418 /* RTCAVFoundationVideoSource.h */,
@@ -249,19 +291,28 @@
 				BC3E8D0F1E671D2800C40418 /* RTCVideoTrack.h in Headers */,
 				BC3E8D121E671D3500C40418 /* AVCaptureState.swift in Headers */,
 				BC3E8D131E671D3500C40418 /* RTCClient.swift in Headers */,
+				BC330E162058F47B00140C35 /* RTCVideoCodec.h in Headers */,
 				BC3E8D041E671D2800C40418 /* RTCRtpCodecParameters.h in Headers */,
 				BC3E8D0E1E671D2800C40418 /* RTCVideoSource.h in Headers */,
+				BC330E152058F47B00140C35 /* RTCVideoCodecH264.h in Headers */,
 				BC3E8CFC1E671D2800C40418 /* RTCMediaSource.h in Headers */,
+				BC330E122058F47B00140C35 /* RTCVideoDecoderVP8.h in Headers */,
+				BC330E102058F47B00140C35 /* RTCVideoFrameBuffer.h in Headers */,
 				BC3E8D001E671D2800C40418 /* RTCMetricsSampleInfo.h in Headers */,
 				BC3E8CEE1E671D2800C40418 /* RTCCameraPreviewView.h in Headers */,
+				BC330E142058F47B00140C35 /* RTCVideoCapturer.h in Headers */,
 				BC3E8CEB1E671D2800C40418 /* RTCAudioSource.h in Headers */,
 				BC3E8CF91E671D2800C40418 /* RTCLogging.h in Headers */,
 				BC3E8D071E671D2800C40418 /* RTCRtpReceiver.h in Headers */,
 				BC3E8CFA1E671D2800C40418 /* RTCMacros.h in Headers */,
+				BC330E0D2058F47B00140C35 /* RTCAudioSession.h in Headers */,
+				BC330E132058F47B00140C35 /* RTCAudioSessionConfiguration.h in Headers */,
 				BC3E8CF21E671D2800C40418 /* RTCDispatcher.h in Headers */,
 				BC3E8CED1E671D2800C40418 /* RTCAVFoundationVideoSource.h in Headers */,
+				BC330E0F2058F47B00140C35 /* RTCVideoEncoderVP9.h in Headers */,
 				BC3E8D0A1E671D2800C40418 /* RTCSSLAdapter.h in Headers */,
 				BC3E8CFD1E671D2800C40418 /* RTCMediaStream.h in Headers */,
+				BC330E092058F47B00140C35 /* RTCVideoViewShading.h in Headers */,
 				BC3E8CFF1E671D2800C40418 /* RTCMetrics.h in Headers */,
 				BC3E8D0C1E671D2800C40418 /* RTCVideoFrame.h in Headers */,
 				BC3E8CFB1E671D2800C40418 /* RTCMediaConstraints.h in Headers */,
@@ -275,8 +326,12 @@
 				BC3E8CF01E671D2800C40418 /* RTCDataChannel.h in Headers */,
 				BC3E8CEF1E671D2800C40418 /* RTCConfiguration.h in Headers */,
 				BC3E8CF71E671D2800C40418 /* RTCIceServer.h in Headers */,
+				BC330E0B2058F47B00140C35 /* RTCVideoDecoderVP9.h in Headers */,
+				BC330E0A2058F47B00140C35 /* RTCVideoCodecFactory.h in Headers */,
 				BC3E8CFE1E671D2800C40418 /* RTCMediaStreamTrack.h in Headers */,
 				BC3E8D021E671D2800C40418 /* RTCPeerConnection.h in Headers */,
+				BC330E0E2058F47B00140C35 /* RTCIntervalRange.h in Headers */,
+				BC330E112058F47B00140C35 /* RTCCameraVideoCapturer.h in Headers */,
 				BC3E8CEC1E671D2800C40418 /* RTCAudioTrack.h in Headers */,
 				BC3E8D081E671D2800C40418 /* RTCRtpSender.h in Headers */,
 				BC72F7481E61646600A4C29F /* SwiftyWebRTC.h in Headers */,
@@ -287,6 +342,7 @@
 				BC3E8D051E671D2800C40418 /* RTCRtpEncodingParameters.h in Headers */,
 				BC3E8D101E671D2800C40418 /* UIDevice+RTCDevice.h in Headers */,
 				BC3E8D091E671D2800C40418 /* RTCSessionDescription.h in Headers */,
+				BC330E0C2058F47B00140C35 /* RTCVideoEncoderVP8.h in Headers */,
 				BC3E8D031E671D2800C40418 /* RTCPeerConnectionFactory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
