@@ -189,8 +189,8 @@ public class RTCClient: NSObject {
 }
 
 public struct ErrorDomain {
-    static let videoPermissionDenied = "Video permission denied"
-    static let audioPermissionDenied = "Audio permission denied"
+    public static let videoPermissionDenied = "Video permission denied"
+    public static let audioPermissionDenied = "Audio permission denied"
 }
 
 private extension RTCClient {
