@@ -22,6 +22,7 @@ public protocol RTCClientDelegate: class {
     func rtcClient(client : RTCClient, didChangeConnectionState connectionState: RTCIceConnectionState)
     func rtcClient(client : RTCClient, didChangeState state: RTCClientState)
     func rtcClient(client : RTCClient, didGenerateIceCandidate iceCandidate: RTCIceCandidate)
+    func rtcClient(client : RTCClient, didCreateLocalCapturer capturer: RTCCameraVideoCapturer)
 }
 
 public extension RTCClientDelegate {
@@ -208,8 +209,11 @@ private extension RTCClient {
 
         if self.isVideoCall {
             if !AVCaptureState.isVideoDisabled {
-                let videoSource = factory.avFoundationVideoSource(with: self.mediaConstraint)
+                let videoSource: RTCVideoSource = factory.videoSource()
+                let capturer = RTCCameraVideoCapturer(delegate: videoSource)
+                self.delegate?.rtcClient(client: self, didCreateLocalCapturer: capturer)
                 let videoTrack = factory.videoTrack(with: videoSource, trackId: "RTCvS0")
+                videoTrack.isEnabled = true
                 localStream.addVideoTrack(videoTrack)
             } else {
                 // show alert for video permission disabled
