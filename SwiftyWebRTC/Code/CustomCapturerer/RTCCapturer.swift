@@ -14,7 +14,7 @@ public class RTCCapturer: NSObject {
     private var settingsModel: RTCCapturerSettingsModel
     private var usingFrontCamera = true
 
-    init(withCapturer capturer: RTCCameraVideoCapturer, settingsModel : RTCCapturerSettingsModel) {
+    public init(withCapturer capturer: RTCCameraVideoCapturer, settingsModel : RTCCapturerSettingsModel) {
         self.capturer = capturer
         self.settingsModel = settingsModel
         super.init()

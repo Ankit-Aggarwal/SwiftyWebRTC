@@ -15,7 +15,7 @@ import Foundation
  * for example video codec, video resolution and maximum bitrate.
  */
 
-class RTCCapturerSettingsModel: NSObject {
+public class RTCCapturerSettingsModel: NSObject {
 
     struct SettingsConstants {
         static let videoResolutionsStaticValues = [ "640x480", "960x540", "1280x720" ]
