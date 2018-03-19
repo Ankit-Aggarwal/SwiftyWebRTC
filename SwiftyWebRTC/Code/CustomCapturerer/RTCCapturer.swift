@@ -8,7 +8,7 @@
 import Foundation
 import WebRTC
 
-class RTCCapturer: NSObject {
+public class RTCCapturer: NSObject {
 
     private var capturer: RTCCameraVideoCapturer
     private var settingsModel: RTCCapturerSettingsModel

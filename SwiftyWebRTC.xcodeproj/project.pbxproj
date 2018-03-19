@@ -64,16 +64,16 @@
 		BC3E8D111E671D2800C40418 /* WebRTC.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3E8CEA1E671D2800C40418 /* WebRTC.h */; };
 		BC3E8D121E671D3500C40418 /* AVCaptureState.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC3E8CC01E671D1E00C40418 /* AVCaptureState.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC3E8D131E671D3500C40418 /* RTCClient.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC3E8CC11E671D1E00C40418 /* RTCClient.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC3E8D161E67223900C40418 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3E8D151E67223900C40418 /* WebRTC */; };
 		BC6C145A205FC1D700715C38 /* RTCCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6C1457205FC1D700715C38 /* RTCCapturer.swift */; };
 		BC6C145B205FC1D700715C38 /* RTCCapturerSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6C1458205FC1D700715C38 /* RTCCapturerSettingsModel.swift */; };
 		BC6C145C205FC1D700715C38 /* RTCSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6C1459205FC1D700715C38 /* RTCSettingsStore.swift */; };
-		BC6C145D205FC26400715C38 /* RTCCapturer.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC6C1457205FC1D700715C38 /* RTCCapturer.swift */; };
+		BC6C145D205FC26400715C38 /* RTCCapturer.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC6C1457205FC1D700715C38 /* RTCCapturer.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6C145E205FC26400715C38 /* RTCCapturerSettingsModel.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC6C1458205FC1D700715C38 /* RTCCapturerSettingsModel.swift */; };
 		BC6C145F205FC26400715C38 /* RTCSettingsStore.swift in Headers */ = {isa = PBXBuildFile; fileRef = BC6C1459205FC1D700715C38 /* RTCSettingsStore.swift */; };
 		BC72F7411E61646600A4C29F /* SwiftyWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72F7371E61646600A4C29F /* SwiftyWebRTC.framework */; };
 		BC72F7461E61646600A4C29F /* SwiftyWebRTCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72F7451E61646600A4C29F /* SwiftyWebRTCTests.swift */; };
 		BC72F7481E61646600A4C29F /* SwiftyWebRTC.h in Headers */ = {isa = PBXBuildFile; fileRef = BC72F73A1E61646600A4C29F /* SwiftyWebRTC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC909E8B205FC89D0003FAFF /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC909E8A205FC89D0003FAFF /* WebRTC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +152,7 @@
 		BC72F7401E61646600A4C29F /* SwiftyWebRTCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyWebRTCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC72F7451E61646600A4C29F /* SwiftyWebRTCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyWebRTCTests.swift; sourceTree = "<group>"; };
 		BC72F7471E61646600A4C29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC909E8A205FC89D0003FAFF /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Carthage/Build/iOS/WebRTC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC3E8D161E67223900C40418 /* WebRTC in Frameworks */,
+				BC909E8B205FC89D0003FAFF /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +299,7 @@
 		BC72F7571E61839000A4C29F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC909E8A205FC89D0003FAFF /* WebRTC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,8 +313,8 @@
 			files = (
 				BC3E8D0F1E671D2800C40418 /* RTCVideoTrack.h in Headers */,
 				BC3E8D121E671D3500C40418 /* AVCaptureState.swift in Headers */,
-				BC3E8D131E671D3500C40418 /* RTCClient.swift in Headers */,
 				BC6C145D205FC26400715C38 /* RTCCapturer.swift in Headers */,
+				BC3E8D131E671D3500C40418 /* RTCClient.swift in Headers */,
 				BC6C145E205FC26400715C38 /* RTCCapturerSettingsModel.swift in Headers */,
 				BC6C145F205FC26400715C38 /* RTCSettingsStore.swift in Headers */,
 				BC330E162058F47B00140C35 /* RTCVideoCodec.h in Headers */,
