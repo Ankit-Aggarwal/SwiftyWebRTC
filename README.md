@@ -21,7 +21,14 @@ github "Ankit-Aggarwal/SwiftyWebRTC"
 ## Usage:
 Integration RTCClient to your controller is easy.
 
-1. Configure Client:
+1. You need to add following two properties to your controller 
+
+```
+    var videoClient: RTCClient?
+    var captureController: RTCCapturer! // custom capturer that can be used to switch camera (front/back camera)
+```
+
+2. Configure Client:
 ```
     func configureVideoClient() {
     // You can pass on iceServers your app wanna use 
@@ -32,9 +39,19 @@ Integration RTCClient to your controller is easy.
         client.startConnection()
     }
 ```
-2. Your controller needs to conform to RTCClientDelegate, which will help your client to interact with server for passing info
+3. Your controller needs to conform to RTCClientDelegate, which will help your client to interact with server for passing info
 ```
 extension VideoChatViewController: RTCClientDelegate {
+
+    func rtcClient(client: RTCClient, didCreateLocalCapturer capturer: RTCCameraVideoCapturer) {
+    // To handle when camera is not available
+        if UIDevice.current.modelName != "Simulator" {
+            let settingsModel = RTCCapturerSettingsModel()
+            self.captureController = RTCCapturer.init(withCapturer: capturer, settingsModel: settingsModel)
+            captureController.startCapture()
+        }
+    }
+    
     func rtcClient(client : RTCClient, didReceiveError error: Error) {
         // Error Received
         }
@@ -59,6 +76,12 @@ extension VideoChatViewController: RTCClientDelegate {
         self.remoteVideoTrack = remoteVideoTrack
     }
 }
+```
+
+4. After setting all this, you can easily switch between front/back camera as follows
+
+```
+        self.captureController.switchCamera()
 ```
 
 This is all you need to let the data flowing :)
