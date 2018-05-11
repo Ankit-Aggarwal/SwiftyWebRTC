@@ -54,7 +54,7 @@ public class RTCClient: NSObject {
     fileprivate let videoCallConstraint = RTCMediaConstraints(mandatoryConstraints: ["OfferToReceiveAudio" : "true", "OfferToReceiveVideo": "true"],
                                                                      optionalConstraints: nil)
     var callConstraint : RTCMediaConstraints {
-        return self.isVideoCall ? self.audioCallConstraint : self.videoCallConstraint
+        return self.isVideoCall ? self.videoCallConstraint : self.audioCallConstraint
     }
 
     fileprivate let defaultConnectionConstraint = RTCMediaConstraints(mandatoryConstraints: nil, optionalConstraints: ["DtlsSrtpKeyAgreement": "true"])
