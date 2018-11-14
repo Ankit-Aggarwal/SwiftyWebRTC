@@ -44,6 +44,7 @@ public class RTCClient: NSObject {
     fileprivate var iceServers: [RTCIceServer] = []
     fileprivate var peerConnection: RTCPeerConnection?
     fileprivate var connectionFactory: RTCPeerConnectionFactory = RTCPeerConnectionFactory()
+    fileprivate var audioTrack: RTCAudioTrack?
     fileprivate var remoteIceCandidates: [RTCIceCandidate] = []
     fileprivate var isVideoCall = true
 
@@ -86,6 +87,7 @@ public class RTCClient: NSObject {
             return
         }
         if let stream = peerConnection.localStreams.first {
+            audioTrack = nil
             peerConnection.remove(stream)
         }
     }
@@ -187,6 +189,10 @@ public class RTCClient: NSObject {
             self.remoteIceCandidates.append(iceCandidate)
         }
     }
+
+    func muteCall(_ mute: Bool) {
+        audioTrack?.isEnabled = !mute
+    }
 }
 
 public struct ErrorDomain {
@@ -224,6 +230,7 @@ private extension RTCClient {
 
         if !AVCaptureState.isAudioDisabled {
             let audioTrack = factory.audioTrack(withTrackId: "RTCaS0")
+            self.audioTrack = audioTrack
             localStream.addAudioTrack(audioTrack)
         } else {
             // show alert for audio permission disabled
