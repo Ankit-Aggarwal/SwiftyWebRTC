@@ -44,7 +44,7 @@ public class RTCClient: NSObject {
     fileprivate var iceServers: [RTCIceServer] = []
     fileprivate var peerConnection: RTCPeerConnection?
     fileprivate var connectionFactory: RTCPeerConnectionFactory = RTCPeerConnectionFactory()
-    fileprivate var audioTrack: RTCAudioTrack?
+    fileprivate var audioTrack: RTCAudioTrack? // Save instance to be able to mute the call
     fileprivate var remoteIceCandidates: [RTCIceCandidate] = []
     fileprivate var isVideoCall = true
 
@@ -115,6 +115,7 @@ public class RTCClient: NSObject {
         }
         peerConnection.close()
         if let stream = peerConnection.localStreams.first {
+            audioTrack = nil
             peerConnection.remove(stream)
         }
         self.delegate?.rtcClient(client: self, didChangeState: .disconnected)
@@ -190,8 +191,8 @@ public class RTCClient: NSObject {
         }
     }
 
-    func muteCall(_ mute: Bool) {
-        audioTrack?.isEnabled = !mute
+    public func muteCall(_ mute: Bool) {
+        self.audioTrack?.isEnabled = !mute
     }
 }
 
