@@ -119,6 +119,8 @@ public class RTCClient: NSObject {
             peerConnection.remove(stream)
         }
         self.delegate?.rtcClient(client: self, didChangeState: .disconnected)
+
+        initialisePeerConnection()
     }
 
     public func makeOffer() {
